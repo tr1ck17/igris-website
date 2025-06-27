@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Setup & SOP Generation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Business Setup & SOP Generation</h1>
+    </header>
+    <nav style="text-align:center; margin: 1.5rem 0; position:relative;">
+        <a href="index.html" class="cta-button" style="margin:0 0.5rem;">Home</a>
+        <a href="about.html" class="cta-button" style="margin:0 0.5rem;">About Us</a>
+        <div class="dropdown" style="display:inline-block; position:relative;">
+            <a href="services.html" class="cta-button" style="margin:0 0.5rem;">Services ▼</a>
+            <div class="dropdown-content" style="display:none; position:absolute; left:0; background:#23272f; min-width:260px; z-index:10; border-radius:0 0 10px 10px; box-shadow:0 4px 16px rgba(0,0,0,0.18);">
+                <a href="sop.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">SOP Generation</a>
+                <a href="sales.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Sales Process Refinement</a>
+                <a href="reviews-building.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Google Reviews Building</a>
+                <a href="marketing.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Marketing Services</a>
+                <a href="automation.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Automation for Data Entry</a>
+                <a href="website.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Website Modifications & Upgrades</a>
+                <a href="library.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Document & Asset Library</a>
+            </div>
+        </div>
+        <a href="case-studies/index.html" class="cta-button" style="margin:0 0.5rem;">Case Studies</a>
+        <a href="resources/index.html" class="cta-button" style="margin:0 0.5rem;">Resource Center</a>
+        <a href="events/index.html" class="cta-button" style="margin:0 0.5rem;">Events</a>
+        <a href="careers/index.html" class="cta-button" style="margin:0 0.5rem;">Careers</a>
+        <a href="pricing.html" class="cta-button" style="margin:0 0.5rem;">Pricing & Packages</a>
+        <a href="faq.html" class="cta-button" style="margin:0 0.5rem;">FAQ</a>
+        <a href="client-portal/login.html" class="cta-button" style="margin:0 0.5rem;">Client Portal</a>
+        <a href="reviews.html" class="cta-button" style="margin:0 0.5rem;">Customer Reviews</a>
+        <a href="book.html" class="cta-button" style="margin:0 0.5rem;">Book a Call</a>
+    </nav>
+    <main class="main-section">
+        <section class="service-box">
+            <h2>Done-for-You System Setup</h2>
+            <ul>
+                <li>CRM/contact import and cleanup</li>
+                <li>Organize your current clients/leads and apply statuses</li>
+                <li>Set up sales flow steps and teach you how to organize client information</li>
+            </ul>
+        </section>
+        <section class="service-box">
+            <h2>Proven SOPs & Templates</h2>
+            <ul>
+                <li>Job templates, site surveys, quote forms, email templates, organization templates</li>
+                <li>Answering phone, scheduling, on-job SOPs, and more</li>
+                <li>Ready-to-use checklists, scripts, and onboarding materials</li>
+            </ul>
+        </section>
+        <section class="service-box">
+            <h2>Custom Automations</h2>
+            <ul>
+                <li>Automate lead updates, review requests, inventory alerts, KPI tracking, and calendar updates</li>
+                <li>Integrate with Zapier and other tools for seamless workflow</li>
+            </ul>
+        </section>
+        <section class="service-box">
+            <h2>Calendar & Routing Setup</h2>
+            <ul>
+                <li>Optimize scheduling and job grouping to reduce drive time</li>
+                <li>Marketing schedule for social media and ad posting</li>
+            </ul>
+        </section>
+        <section class="service-box">
+            <h2>Website Optimization or Redesign</h2>
+            <ul>
+                <li>Update your website to be user-friendly and visually appealing</li>
+                <li>Integrate SEO for better Google visibility</li>
+            </ul>
+        </section>
+        <section class="service-box">
+            <h2>Custom Tags, Filters & Software Coaching</h2>
+            <ul>
+                <li>Set up call, job, and lead tags for better organization</li>
+                <li>Personalized coaching on your current software, with video tutorials and 1-on-1 support</li>
+            </ul>
+        </section>
+        <div class="contact-options" style="margin-top:2rem;">
+            <button class="cta-button" onclick="window.location.href='book.html'">Book a Call</button>
+            <button class="cta-button" onclick="window.location.href='mailto:info@igris.com?subject=Interested%20in%20SOP%20Services'">Email for Pricing</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
+    <script>
+    // Dropdown hover logic
+    document.addEventListener('DOMContentLoaded', function() {
+      var dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(function(dropdown) {
+        var content = dropdown.querySelector('.dropdown-content');
+        dropdown.addEventListener('mouseenter', function() { content.style.display = 'block'; });
+        dropdown.addEventListener('mouseleave', function() { content.style.display = 'none'; });
+      });
+    });
+    </script>
+</body>
+</html>

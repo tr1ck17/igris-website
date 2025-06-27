@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document & Asset Library - Igris</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>Igris Software</header>
+    <nav style="text-align:center; margin: 1.5rem 0; position:relative;">
+        <a href="index.html" class="cta-button" style="margin:0 0.5rem;">Home</a>
+        <div style="display:inline-block;">
+            <a href="about.html" class="cta-button" style="margin:0 0.5rem;">About Us</a>
+            <a href="careers/index.html" class="cta-button" style="margin:0 0.5rem;">Careers</a>
+            <a href="reviews.html" class="cta-button" style="margin:0 0.5rem;">Customer Reviews</a>
+        </div>
+        <div class="dropdown" style="display:inline-block; position:relative;">
+            <a href="services.html" class="cta-button" style="margin:0 0.5rem;">Services ▼</a>
+            <div class="dropdown-content" style="display:none; position:absolute; left:0; background:#23272f; min-width:260px; z-index:10; border-radius:0 0 10px 10px; box-shadow:0 4px 16px rgba(0,0,0,0.18);">
+                <a href="sop.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">SOP Generation</a>
+                <a href="sales.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Sales Process Refinement</a>
+                <a href="reviews-building.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Google Reviews Building</a>
+                <a href="marketing.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Marketing Services</a>
+                <a href="automation.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Automation for Data Entry</a>
+                <a href="website.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Website Modifications & Upgrades</a>
+                <a href="library.html" class="cta-button" style="display:block; margin:0; border-radius:0; text-align:left;">Document & Asset Library</a>
+            </div>
+        </div>
+        <a href="case-studies/index.html" class="cta-button" style="margin:0 0.5rem;">Case Studies</a>
+        <a href="resources/index.html" class="cta-button" style="margin:0 0.5rem;">Resource Center</a>
+        <a href="events/index.html" class="cta-button" style="margin:0 0.5rem;">Events</a>
+        <a href="pricing.html" class="cta-button" style="margin:0 0.5rem;">Pricing & Packages</a>
+        <a href="faq.html" class="cta-button" style="margin:0 0.5rem;">FAQ</a>
+        <a href="client-portal/login.html" class="cta-button" style="margin:0 0.5rem;">Client Portal</a>
+        <a href="book.html" class="cta-button" style="margin:0 0.5rem;">Book a Call</a>
+    </nav>
+    <script>
+    // Dropdown hover logic
+    document.addEventListener('DOMContentLoaded', function() {
+      var dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(function(dropdown) {
+        var content = dropdown.querySelector('.dropdown-content');
+        dropdown.addEventListener('mouseenter', function() { content.style.display = 'block'; });
+        dropdown.addEventListener('mouseleave', function() { content.style.display = 'none'; });
+      });
+    });
+    </script>
+    <main class="main-section">
+        <h1>Document & Asset Library</h1>
+        <section class="service-box">
+            <h2>Ready-to-Use Templates & Documents</h2>
+            <ul>
+                <li>Job walkthrough checklists (for technicians)</li>
+                <li>Invoice terms and quote disclaimer templates</li>
+                <li>Employee onboarding checklists</li>
+                <li>Call scripts for CSRs and sales</li>
+                <li>Marketing materials: social media calendars, ad templates, email templates</li>
+                <li>Estimate and quote templates</li>
+                <li>KPI tracking and reporting templates</li>
+                <li>Daily schedule and organization SOPs</li>
+                <li>Inventory management and ordering SOPs</li>
+                <li>Customer communication templates (follow-ups, reminders, review requests, thank you notes, etc.)</li>
+                <li>Specialized industry SOPs (garage door, HVAC, cleaning, etc.)</li>
+            </ul>
+            <p>All documents are designed to save you time, improve consistency, and help your business run smoothly. We provide both digital and printable formats, and can customize templates to fit your needs.</p>
+        </section>
+        <section style="margin-bottom:2.5rem;">
+            <h2 style="color:#7ecbff;">Newsletter Signup</h2>
+            <form style="max-width:400px; margin:auto; display:flex; flex-direction:column; gap:1rem;" aria-label="Newsletter Signup">
+                <label for="newsletter-email" style="text-align:left;">Get library updates and business tips:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email address" required style="padding:0.7rem; border-radius:6px; border:1px solid #3a7bd5;">
+                <button class="cta-button" type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section style="margin-bottom:2.5rem;">
+            <h2 style="color:#7ecbff;">Our Trust Signals</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; align-items:center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Trustpilot_logo.png" alt="Trustpilot" style="height:40px; background:#fff; border-radius:6px; padding:0.3rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_2015_logo.svg" alt="Google Reviews" style="height:40px; background:#fff; border-radius:6px; padding:0.3rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/BBB_logo.svg" alt="BBB Accredited" style="height:40px; background:#fff; border-radius:6px; padding:0.3rem;">
+                <span style="color:#b0d8ff; font-weight:bold;">Awarded: Top Service Business Consultant 2025</span>
+            </div>
+        </section>
+        <section style="margin-bottom:2.5rem;">
+            <h2 style="color:#7ecbff;">Accessibility & Performance</h2>
+            <ul style="text-align:left; max-width:600px; margin:auto; color:#b0d8ff;">
+                <li>All navigation and buttons are keyboard accessible.</li>
+                <li>High-contrast color scheme for readability.</li>
+                <li>Optimized images and video for fast loading.</li>
+                <li>ARIA labels and semantic HTML for screen readers.</li>
+                <li>Mobile-first responsive design.</li>
+            </ul>
+        </section>
+        <div class="contact-options" style="margin-top:2rem;">
+            <button class="cta-button" onclick="window.location.href='book.html'">Book a Call</button>
+            <button class="cta-button" onclick="window.location.href='mailto:info@igris.com?subject=Interested%20in%20Document%20Library'">Email for Details</button>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Igris Software. All rights reserved.
+    </footer>
+</body>
+</html>

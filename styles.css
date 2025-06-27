@@ -1,0 +1,128 @@
+/*
+  styles.css for Igris Landing Page
+  - White text
+  - Dark grayish backgrounds for text sections
+  - Bluish document background
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(315deg, #7ecbff 0%, #3a7bd5 40%, #29518a 80%, #18325a 100%),
+                repeating-radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 2px, transparent 3px, transparent 100px),
+                repeating-linear-gradient(120deg, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 3px, transparent 8px, transparent 100px),
+                repeating-linear-gradient(60deg, rgba(0,0,0,0.12) 0px, rgba(0,0,0,0.12) 2.5px, transparent 6px, transparent 100px);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+}
+
+header {
+    background: #23272f; /* Dark grayish */
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.main-section {
+  background: none;
+  margin: 2rem 0;
+  max-width: 1200px;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 2.5rem 2vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.main-section p {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #3a7bd5;
+    color: #fff;
+    border: 2px solid #1e3c72;
+    border-radius: 8px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.cta-button:hover {
+    background: #28527a;
+    border-color: #0a2342;
+}
+
+#current {
+  background: #fff;
+  color: #3a7bd5;
+  border: 2px solid black;
+}
+
+footer {
+    text-align: center;
+    color: #b0b8c1;
+    padding: 1.5rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-box {
+  background: #23272f;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  padding: 2rem 1.5rem;
+  text-align: left;
+  border-left: 6px solid #3a7bd5;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  transform: none;
+}
+
+.service-box:hover {
+  box-shadow: 0 6px 24px rgba(58,123,213,0.25);
+}
+
+@media (max-width: 700px) {
+  .main-section {
+    padding: 1.2rem 0.5rem;
+  }
+  .service-box {
+    padding: 1.2rem 0.7rem;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
